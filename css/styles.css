@@ -347,11 +347,6 @@ button[type=submit]:focus {
 }
 
 @media screen and (max-width: 48rem) {
-  /*.nav {
-    position: fixed;
-    left: 0;
-    right: 0;
-  }*/
   .nav li {
     padding: 0 .25rem;
     font-size: .8rem;

@@ -65,6 +65,20 @@ summary {
   height: 100%;
 }
 
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
 .container {
   max-width: 44rem;
   margin: 0 auto;
@@ -242,17 +256,40 @@ section:nth-of-type(3)::after {
 }
 
 /*  ======================================================
-    CONTACT FORM
+    CONTACT & REGISTRATION FORMS
     ======================================================  */
 form {
-  max-width: 20rem;
   margin: 0 auto;
 }
-form > div {
+
+form.narrow-form {
+  max-width: 20rem;
+}
+form > *,
+fieldset > * {
   margin-bottom: 1rem;
 }
 
-label {
+.inline-fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inline-fields > div {
+  flex: 0 1 47%;
+}
+
+.inline-fields.uneven > div:first-child {
+  flex: 0 1 71%;
+}
+
+.inline-fields.uneven > div:last-child {
+  flex: 0 1 23%;
+}
+
+label,
+.label {
   display: block;
   line-height: 1.5;
   font-weight: bold;
@@ -271,6 +308,28 @@ button {
   font-size: 1.125rem;
   min-height: 2.5rem;
 }
+
+input[type="radio"] {
+  width: 1.2rem;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  margin-left: 0.5rem;
+  align-self: center;
+}
+
+.inline-radio {
+  display: inline-flex;
+  margin-right: 1.5rem;
+  align-items: stretch;
+}
+
+fieldset {
+  position: relative;
+  border-color: var(--color-primary);
+}
+
 input[type="email"]:placeholder-shown:invalid {
   box-shadow: none;
 }
@@ -299,6 +358,31 @@ button[type=submit] {
 button[type=submit]:hover,
 button[type=submit]:focus {
   filter: saturate(150%);
+}
+
+.button-inline {
+  display: inline-block;
+  width:  auto;
+  border: 0;
+  background: 0;
+  text-align: left;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.button-inline:hover,
+.button-inline:focus {
+  text-decoration: underline;
+}
+
+.removeMember {
+  position: absolute;
+  top: -1.5rem;
+  right: .5rem;
+}
+
+.status {
+  font-weight: bold;
 }
 
 .note {

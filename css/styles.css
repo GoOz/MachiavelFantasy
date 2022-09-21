@@ -216,12 +216,20 @@ section:nth-of-type(2)::after {
 section:nth-of-type(3)::after {
   background-image: url('../img/james-pond-909c1sEZYJo-unsplash.jpg');
 }
+section:nth-of-type(4)::after {
+  background-image: url('../img/carlos-felipe-ramirez-mesa--kwHrztmKzg-unsplash.jpg');
+}
 
 .agenda .aspect-ratio {
   box-sizing: border-box;
   margin: 0 2rem 2rem;
   border: .5rem solid var(--black);
   border-radius: .5rem;
+}
+
+.locaux img {
+  display: block;
+  width: 100%;
 }
 
 .discord .container {
@@ -447,10 +455,13 @@ button[type=submit]:focus {
 @media screen and (max-width: 48rem) {
   .nav li {
     padding: 0 .25rem;
-    font-size: .8rem;
+    font-size: .75rem;
   }
   .discord .flex-item {
     flex: 1 1 100%;
+  }
+  .social .flex-item {
+    flex: 0 0 auto;
   }
 }
 

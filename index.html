@@ -7,7 +7,6 @@
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="css/normalize-8.0.1.css">
   <link rel="stylesheet" href="css/styles.css">
-  <script async src="js/script.js"></script>
 </head>
 <body>
   <nav class="nav">
@@ -26,11 +25,11 @@
     <section id="presentation" class="section alt with-bg">
       <div class="container">
         <h2>Présentation du club</h2>
-        <p>Machiavel Fantasy est une association créée en 1981 permettant de s’initier à différents types de jeux sur table. Bien que le club soit historiquement et principalement axé sur le jeu de rôle, d’autres formes de jeux sont désormais pratiquées : de plateau, de figurines, de cartes, etc.</p>
+        <p>Machiavel Fantasy est une association des Yvelines créée en 2000, et qui tire ses origines depuis 1981, permettant de s’initier à différents types de jeux sur table. Bien que le club soit historiquement et principalement axé sur le jeu de rôle, d’autres formes de jeux sont désormais pratiquées : de plateau, de figurines, de cartes, etc.</p>
         <p>Nous sommes environ une trentaine de membres à ce jour.</p>
         <p>Mais quel que soit le type de jeu qui vous intéresse, n’hésitez pas à nous contacter. Nous verrons ensemble si les activités du club sont susceptibles de vous intéresser.</p>
-        <p>Chaque groupe de joueurs (de 3 à 7 joueurs généralement car les salles ne permettent pas de réunir beaucoup plus de monde) s’organise en fonction de la disponibilité de ses membres. Les parties ont souvent lieu le weekend, ou le soir en semaine. Un agenda est disponible ci-dessous pour voir quand ont lieu les différentes parties organisées.</p>
-        <p>L’association utilise des locaux mis à disposition par la mairie des <strong>Clayes-sous-bois</strong> (78340) contenant tout le nécessaire pour jouer dans de bonnes conditions :</p>
+        <p>Chaque groupe de joueurs (de 3 à 7 joueurs généralement) s’organise en fonction de la disponibilité de ses membres. Les parties ont souvent lieu le weekend ou le soir en semaine. Un agenda est disponible ci-dessous pour voir quand ont lieu les différentes parties organisées.</p>
+        <p>L’association utilise des locaux disponibles <strong>7 jours sur 7</strong>, <strong>24 heures sur 24 même pendant les périodes de vacances scolaires</strong> et mis à disposition par la mairie des <strong><a href="https://www.lesclayessousbois.fr/fr/">Clayes-sous-bois</a></strong> (78340) contenant tout le nécessaire pour jouer dans de bonnes conditions :</p>
         <ul>
           <li>Des tables et des chaises (forcément !)</li>
           <li>Une collection de jeux à disposition</li>
@@ -38,8 +37,8 @@
           <li>Un réfrigérateur (boissons sans alcool, friandises…)</li>
           <li>Ordinateur, chaîne hifi…</li>
         </ul>
-        <p>N’hésitez pas à vous connecter et à vous présenter sur le discord, c’est gratuit et ça n’engage à rien !</p>
-        <p>Vous pouvez aussi nous contacter via le <a href="#contact">formulaire de contact</a>.</p>
+        <p>N’hésitez pas à vous connecter et à vous présenter sur le Discord, c’est gratuit et ça n’engage à rien !</p>
+        <p>Vous pouvez aussi nous contacter via le <a href="#contact">formulaire de contact</a> pour en savoir plus.</p>
         <p>A bientôt !</p>
         <p>Machiavel Fantasy</p>
       </div>
@@ -83,95 +82,32 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="section">
+    <section id="contact" class="section contact">
       <div class="container">
-        <h2>Formulaire de contact</h2>
-        <form action="https://formspree.io/f/xvoveeao" method="POST" class="narrow-form">
-          <div>
-            <label for="name">Votre nom :</label>
-            <input id="name" placeholder="Gary" type="text" name="name" required>
-          </div>
-          <div>
-            <label for="email">Votre e-mail :</label>
-            <input id="email" placeholder="gary@gygax.com" type="email" name="_replyto" required>
-          </div>
-          <div>
-            <label for="message">Votre message :</label>
-            <textarea id="message" name="message" placeholder="Mon message au club…" required></textarea>
-          </div>
-          <div><button type="submit">Envoyer</button></div>
-          <p class="note">Vos données ne seront utilisées que pour vous contacter en retour, nous ne gardons pas et ne revendons pas vos données personnelles.</p>
-          <p class="note">Les messages envoyés sont enregistrés à l'envoi et sont détruits 30 jours après.</p>
-        </form>
-      </div>
-      <div class="container">
-        <h2>Formulaire d'adhésion</h2>
-        <form id="registration" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/xqkwwbby" method="post">
-          <fieldset>
-            <legend>Information de l'adhérent</legend>
-            <div class="inline-fields">
-              <div>
-                <label for="firstname">Prénom<span class="note"> * <span class="sr-only">requis</span></span></label>
-                <input type="text" name="firstname" id="firstname" placeholder="Gary" required>
-              </div>
-              <div>
-                <label for="lastname">Nom<span class="note"> * <span class="sr-only">requis</span></span></label>
-                <input type="text" name="lastname" id="lastname" placeholder="Gygax" required>
-              </div>
+        <div class="flex-item">
+          <h2>Contact</h2>
+          <form action="https://formspree.io/f/xvoveeao" method="POST" class="narrow-form">
+            <div>
+              <label for="name">Votre nom :</label>
+              <input id="name" placeholder="Gary" type="text" name="name" required>
             </div>
             <div>
-              <label for="email-address">Email Address<span class="note"> * <span class="sr-only">requis</span></span></label>
-              <input type="email" name="_replyto" id="email-address" placeholder="gary@gygax.com" required>
+              <label for="email">Votre e-mail :</label>
+              <input id="email" placeholder="gary@gygax.com" type="email" name="_replyto" required>
             </div>
             <div>
-              <label for="discord-username">Pseudo Discord</label>
-              <input type="text" name="discord-username" id="discord-username" placeholder="Gargyx">
+              <label for="message">Votre message :</label>
+              <textarea id="message" name="message" placeholder="Mon message au club…" required></textarea>
             </div>
-          </fieldset>
-          <button class="button-inline" type="button" id="addMember">➕ Ajouter un adhérent supplémentaire</button>
-          <div>
-            <label for="address">Adresse<span class="note"> * <span class="sr-only">requis</span></span></label>
-            <input type="text" name="address" id="address" placeholder="15 Rue de la Paix" required>
-          </div>
-          <div class="inline-fields uneven">
-            <div>
-              <label for="city">Ville<span class="note"> * <span class="sr-only">requis</span></span></label>
-              <input type="text" name="city" id="city" placeholder="Paris" required>
-            </div>
-            <div>
-              <label for="postal-code">Code postal<span class="note"> * <span class="sr-only">requis</span></span></label>
-              <input type="text" name="postal-code" id="postal-code" placeholder="75000" required pattern="[0-9]{5}">
-            </div>
-          </div>
-          <p class="note">Pour les membres d'une même famille, vivant dans le même foyer fiscal, la cotisation de l'adhérent principal sera de 20€, puis 10€ pour chaque membre supplémentaire.</p>
-          <div class="inline-fields">
-            <div>
-              <label for="cotisation">Montant cotisation <span class="note">(auto-rempli)</span></label>
-              <input type="text" name="cotisation" id="cotisation" readonly value="20€">
-            </div>
-            <div>
-              <span class="label">Moyen de paiement<span class="note"> * <span class="sr-only">requis</span></span></span>
-              <div class="inline-radio">
-                <input type="radio" name="paiement" id="paiement_cheque" required value="Chèque">
-                <label for="paiement_cheque">Chèque</label>
-              </div>
-              <div class="inline-radio">
-                <input type="radio" name="paiement" id="paiement_espece" required value="Espèce">
-                <label for="paiement_espece">Espèce</label>
-              </div>
-            </div>
-          </div>
-          <div>
-            <label for="comment">Commentaire</label>
-            <textarea rows="2" name="comment" id="comment"></textarea>
-          </div>
-          <div>
-            <input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
-            <button type="submit">Adhérer</button>
-          </div>
-          <p class="note">* Champs requis pour des raisons légales. Nous ne revendrons <strong>jamais</strong> vos données.</p>
-        </form>
-        <p class="status"></p>
+            <div><button type="submit">Envoyer</button></div>
+            <p class="note">Vos données ne seront utilisées que pour vous contacter en retour, nous ne gardons pas et ne revendons pas vos données personnelles.</p>
+            <p class="note">Les messages envoyés sont enregistrés à l'envoi et sont détruits 30 jours après.</p>
+          </form>
+        </div>
+        <div class="flex-item">
+          <h2>Adhésion</h2>
+          <iframe class="narrow-form" id="haWidget" allowtransparency="true" src="https://www.helloasso.com/associations/cap-les-clayes-sous-bois/adhesions/machiavel-fantasy/widget-vignette" style="width: 350px; height: 450px; border: none;"></iframe>
+        </div>
       </div>
     </section>
   </main>

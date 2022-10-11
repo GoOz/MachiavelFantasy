@@ -263,15 +263,25 @@ section:nth-of-type(4)::after {
   flex-basis: auto;
 }
 
+.contact .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+}
+.contact .flex-item {
+  box-sizing: border-box;
+  flex: 0 1 50%;
+  padding: 1rem;
+}
+
 /*  ======================================================
     CONTACT & REGISTRATION FORMS
     ======================================================  */
-form {
-  margin: 0 auto;
-}
 
-form.narrow-form {
+.narrow-form {
+  display: block;
   max-width: 20rem;
+  margin: 0 auto;
 }
 form > *,
 fieldset > * {

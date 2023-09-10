@@ -479,6 +479,9 @@ button[type=submit]:focus {
   .social .flex-item {
     flex: 0 0 auto;
   }
+  .contact .flex-item {
+    flex: 0 0 100%;
+  }
 }
 
 @media screen and (max-width: 25rem) {
